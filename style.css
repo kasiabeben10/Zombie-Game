@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+#myCanvas {
+    display: block;
+    background-image: url("./images/board-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: none;
+}
+
+.popup {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    cursor: default;
+}
+
+.hidden {
+    display: none;
+    cursor: none;
+}
+
+.one-line-container h2, .one-line-container select {
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.one-line-container {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#crosshair {
+    position: absolute;
+    z-index: 1000;
+    width: 15%;
+    height: auto;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
+#aimImg {
+    width: 100%;
+}

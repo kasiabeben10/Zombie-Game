@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>ZOMBIE GAME</title>
+    <link rel="shortcut icon" href="images/logo.png"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+  </head>
+  <body>
+    <div id = "startPopup" class="popup">
+      <h1>Hello in our Zombie World!</h1>
+      <div class="one-line-container">
+        <h2>Select hard level:</h2>
+        <select id="select">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+      </select>
+    </div>
+      <button id="start-button">Start Game</button>
+    </div>
+    <div id = "popup" class="popup hidden">
+        <h1>Game Over!</h1>
+        <h2 id = "yourScore"></h2>
+        <button id="restart-button">Play Again</button>
+    </div>
+    <canvas id="myCanvas"></canvas>
+    <audio id="sad-music" src="images/sad-music.mp3" loop></audio>
+    <audio id="shot-sound" src="images/shot_sound.mp3"></audio>
+    <div id="crosshair">
+      <img src="./images/aim.png" id="aimImg">
+    </div>
+  </body>
+</html>
